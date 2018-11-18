@@ -1,0 +1,36 @@
+﻿Build started 12/1/2016 1:27:26 PM.
+     1>Project "D:\KMeansWithCuda\KMeansCuda\KMeansCuda.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\KMeansCuda.unsuccessfulbuild".
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\MPICH2\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" /I. /FIcuda_runtime.h /c D:\KMeansWithCuda\KMeansCuda\kernel.cu 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\afeka.ACADEMIC\AppData\Local\Temp\tmp561ec98871d14593af572dc193ffa59d.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "D:\KMeansWithCuda\KMeansCuda\kernel.cu"
+         
+         D:\KMeansWithCuda\KMeansCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\MPICH2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "D:\KMeansWithCuda\KMeansCuda\kernel.cu" 
+         kernel.cu
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\KMeansWithCuda\KMeansCuda\Debug\KMeansCuda.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MPICH2\lib" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\lib\Win32" mpi.lib cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\KMeansCuda.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\KMeansWithCuda\KMeansCuda\Debug\KMeansCuda.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\KMeansWithCuda\KMeansCuda\Debug\KMeansCuda.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\KMeansCuda.exe.embed.manifest.res
+         Debug\main.obj
+     1>main.obj : error LNK2019: unresolved external symbol _MPI_Finalize referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol _MPI_Recv referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol _MPI_Send referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol _MPI_Get_processor_name referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol _MPI_Comm_size referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol _MPI_Comm_rank referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol _MPI_Init referenced in function _main
+     1>D:\KMeansWithCuda\KMeansCuda\Debug\KMeansCuda.exe : fatal error LNK1120: 7 unresolved externals
+     1>Done Building Project "D:\KMeansWithCuda\KMeansCuda\KMeansCuda.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.17

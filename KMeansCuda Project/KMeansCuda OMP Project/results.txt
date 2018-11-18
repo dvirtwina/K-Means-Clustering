@@ -1,0 +1,8 @@
+Number of clusters with the best measure:
+K = 5	QM = 17
+Centers of the clusters:
+(0) 152.178	155.762
+(1) 157.129	37.0046
+(2) 55.6358	160.734
+(3) 39.764	24.3422
+(4) 22.6238	117.625
